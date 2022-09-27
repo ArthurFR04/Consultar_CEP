@@ -1,0 +1,108 @@
+
+.SearchCEP{
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.coleta {
+    box-sizing: border-box;
+    position: relative;
+    width: 90%;
+    height:25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding-top:0.5%;
+
+    border-radius: 15px;
+    background-color: #2491eb;
+    /* box-shadow: 2px 3px 3px rgb(94, 94, 94); */
+}
+
+
+.btns {
+    position: absolute;
+    right: 3%;
+    top: 60%;
+    height: 45%;
+
+}
+
+.btns button {
+    height:70%;
+    
+    border-radius:10px;
+    font-size:120%;
+    color: white;
+    cursor: pointer;
+}
+
+.btnClear {
+    background-color: rgb(241, 46, 11);
+    border: none;
+}
+
+.btnConfirm {
+    background-color: rgb(1, 158, 1);
+    border: none;
+    margin-left: 20px;
+}
+
+.btnClear:hover {
+    background-color: rgb(216, 33, 33)
+}
+
+.btnConfirm:hover {
+    background-color:green;
+}
+
+
+.consulta {
+    box-sizing: border-box;
+    width: 90%;
+    height:50%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    border-radius: 15px;
+    background-color: #2491eb;
+    /* box-shadow: 2px 3px 3px rgb(94, 94, 94); */
+
+     padding-bottom:10px;
+}
+
+.SearchCEP input {
+    width: 96%;
+    height: 16%;
+    
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    font-size:150%;
+    color: rgb(0, 0, 0);
+
+    background-color: #ff00;
+    border: 0;
+    border-bottom: 3px solid #2E2E2E;
+}
+
+.SearchCEP input::placeholder {
+    font-size:130%;
+    color: rgba(0, 0, 0, 0.469);
+}
+
+.coleta input{
+    height:40%;
+    text-align: center;
+
+}

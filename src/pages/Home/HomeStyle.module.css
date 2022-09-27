@@ -1,0 +1,40 @@
+
+.Home {
+    min-height: 100vh;
+    height: 100vh;
+    background-color: #2E2E2E;
+}
+
+.Home header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 4rem;
+    height: 8vh;
+
+    /* font-size: 2.5rem; */
+
+    background-color: #2491eb;
+    background-color: #6db7f2;
+    background-color: #a1d1f7;
+    background-color: #165ea0;
+}
+
+.Home header h1 {
+    margin: 0;
+    color: #ffffff;
+
+}
+
+.container {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* .logradouro {
+    margin-bottom: 20px;
+} */
