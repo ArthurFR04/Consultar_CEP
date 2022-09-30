@@ -1,14 +1,11 @@
 
-// import { saveStateCEP} from './searchcepSlice';
-
-
 // A mock function to mimic making an async request for data
+
 export function fetchCEP(cep) {
 
-  // console.log('fetchando');
+
   return new Promise((resolve) =>
 
-    // setTimeout(() => resolve({ data: amount }), 500)
     resolve(
       fetch(`https://viacep.com.br/ws/${cep}/json/`, {
 
@@ -19,7 +16,6 @@ export function fetchCEP(cep) {
       })
         .then((response) => response.json())
         .then( (json) => {
-          // saveStateCEP(json)
           return (json)
         })
     )
