@@ -10,7 +10,6 @@ import {
   Route,
 } from "react-router-dom";
 
-import App from './App';
 import HomeScreen from './pages/Home/HomeScreen'
 
 import './index.css';
@@ -19,18 +18,15 @@ const container = document.getElementById('root');
 const root = createRoot(container);
 
 root.render(
-  // <React.StrictMode>
-  <Provider store={store}>
-    <BrowserRouter>
-      <Routes>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Routes>
 
-        <Route path="/app" element={<App />} />
+          <Route path="/" element={<HomeScreen />} />
 
-        <Route path="/" element={<HomeScreen />} />
-      </Routes>
-    </BrowserRouter>
-  </Provider>
-  // </React.StrictMode>
+        </Routes>
+      </BrowserRouter>
+    </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function

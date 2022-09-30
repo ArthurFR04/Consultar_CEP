@@ -3,6 +3,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 import { fetchCEP } from './searchcepAPI';
 
+import swal from 'sweetalert';
 
 
 const initialState = {
@@ -20,17 +21,20 @@ const initialState = {
 export const getCEP = createAsyncThunk(
     'adress/fetchCEP',
     async (cep) => {
+        if (cep.length < 8) {
+            swal({
+                title: 'CEP inválido',
+                text: 'Por favor insira um CEP com 8 dígitos',
+                icon: 'error',
+            })
+        }
+        else {
 
-                                                          console.log(cep)
-
-        // const response = await fetchCEP(cep);
-        // return (
-        //     // console.log('async run')
-        //     display(response) 
-        //     // console.log(response)
-        //     // response
-        //     // console.log(state)
-        // )
+            const response = await fetchCEP(cep);
+            return (
+                display(response)
+            )
+        }
     }
 )
 
@@ -47,7 +51,7 @@ export const searchcepSlice = createSlice({
         },
 
         saveStateCEP: (state, action) => {
-            
+
             console.log('save state');
             console.log(action.payload);
 

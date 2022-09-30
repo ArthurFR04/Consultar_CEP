@@ -8,6 +8,7 @@
     /* justify-content: center; */
 }
 
+
 .SearchCEP input {
     width: 96%;
     height: 16%;
@@ -20,13 +21,81 @@
 
     background-color: #ff00;
     border: 0;
-    border-bottom: 3px solid #2E2E2E;
+    border-bottom: 3px solid #2696ff;
 }
+
 
 .SearchCEP input::placeholder {
     font-size:130%;
-    color: rgba(0, 0, 0, 0.469);
+    color: #00467e7e;
 }
+
+
+.coleta {
+    box-sizing: border-box;
+    position: relative;
+    width: 90%;
+    height:25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding-top:0.5%;
+
+    border-radius: 15px;
+    background-color: snow;
+    /* box-shadow: 2px 3px 3px rgb(94, 94, 94); */
+}
+
+.coleta input{
+    height:40%;
+    text-align: center;
+
+}
+
+
+.btns {
+    position: absolute;
+    right: 3%;
+    top: 60%;
+    height: 45%;
+    width: 30%;
+
+}
+
+.btns button {
+    height:70%;
+    
+    border-radius:10px;
+    font-size:120%;
+    color: white;
+    cursor: pointer;
+}
+
+.btnClear {
+    width:40%;
+    background-color: rgb(241, 46, 11);
+    border: none;
+}
+
+.btnConfirm {
+    width:50%;
+
+    background-color: rgb(1, 158, 1);
+    border: none;
+    margin-left: 20px;
+}
+
+.btnClear:hover {
+    background-color: rgb(216, 33, 33)
+}
+
+.btnConfirm:hover {
+    background-color:green;
+}
+
 
 .consulta {
     box-sizing: border-box;
@@ -39,9 +108,11 @@
     justify-content: space-around;
 
     border-radius: 15px;
-    background-color: #2491eb;
+    background-color: snow;
     /* box-shadow: 2px 3px 3px rgb(94, 94, 94); */
 
      padding-bottom:10px;
 }
+
+
 
