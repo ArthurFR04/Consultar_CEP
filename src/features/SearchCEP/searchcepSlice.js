@@ -20,14 +20,17 @@ const initialState = {
 export const getCEP = createAsyncThunk(
     'adress/fetchCEP',
     async (cep) => {
-        const response = await fetchCEP(cep);
-        return (
-            // console.log('async run')
-            display(response) 
-            // console.log(response)
-            // response
-            // console.log(state)
-        )
+
+                                                          console.log(cep)
+
+        // const response = await fetchCEP(cep);
+        // return (
+        //     // console.log('async run')
+        //     display(response) 
+        //     // console.log(response)
+        //     // response
+        //     // console.log(state)
+        // )
     }
 )
 

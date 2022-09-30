@@ -1,49 +1,38 @@
 import React from 'react';
-// { useState }
 
-import { 
-    // useSelector, 
-    useDispatch } from 'react-redux';
 
-import {
-    selectValue , saveStateCEP
-} from './searchcepSlice';
 
+// import {
+//     selectValue , saveStateCEP
+// } from './searchcepSlice';
+
+import CepForm from '../Form/CepForm'
 
 import styles from './SearchCEP.module.css';
 
+
 // import { fetchCEP } from './searchcepAPI'
-import { getCEP } from './searchcepSlice'
+
+
+
+
+
 
 let SearchCEP = () => {
     // const count = useSelector(selectCount);
-    const dispatch = useDispatch();
+    
     // const [incrementAmount, setIncrementAmount] = useState('2');
 
     // const incrementValue = Number(incrementAmount) || 0;
 
+
+
+    // onChange={(event) => setCep( event.target.value)}
+
     return (
         <div className= {styles.SearchCEP}>
-            <div className={styles.coleta}>
 
-                <input id='inpColeta' placeholder='Insira o CEP'/>
-
-                <span className={styles.btns}>
-                    <button 
-                        className={styles.btnClear}
-                        onClick={() => document.getElementById('inpColeta').value = '' } 
-                    >
-                        Limpar
-                    </button>
-
-                    <button 
-                        className={styles.btnConfirm}
-                        onClick={ () => dispatch( getCEP( document.getElementById('inpColeta').value ) ) }
-                    > 
-                        Consultar 
-                    </button>
-                </span>
-            </div>
+            <CepForm />
 
             <div className={styles.consulta}>
                 <input type="text" placeholder='CEP'        readOnly />
